@@ -2,3 +2,7 @@ C:\Users\Aluno\Desktop\2018-09-03.Wilker\DS.Projeto.Controller\DS.Projeto.Contro
 C:\Users\Aluno\Desktop\2018-09-03.Wilker\DS.Projeto.Controller\DS.Projeto.Controller\bin\Debug\DS.Projeto.Controller.pdb
 C:\Users\Aluno\Desktop\2018-09-03.Wilker\DS.Projeto.Controller\DS.Projeto.Controller\obj\Debug\DS.Projeto.Controller.dll
 C:\Users\Aluno\Desktop\2018-09-03.Wilker\DS.Projeto.Controller\DS.Projeto.Controller\obj\Debug\DS.Projeto.Controller.pdb
+C:\Users\Aluno\Desktop\SQLConnection.CSharp\DS.Projeto.Controller\bin\Debug\DS.Projeto.Controller.dll
+C:\Users\Aluno\Desktop\SQLConnection.CSharp\DS.Projeto.Controller\bin\Debug\DS.Projeto.Controller.pdb
+C:\Users\Aluno\Desktop\SQLConnection.CSharp\DS.Projeto.Controller\obj\Debug\DS.Projeto.Controller.dll
+C:\Users\Aluno\Desktop\SQLConnection.CSharp\DS.Projeto.Controller\obj\Debug\DS.Projeto.Controller.pdb

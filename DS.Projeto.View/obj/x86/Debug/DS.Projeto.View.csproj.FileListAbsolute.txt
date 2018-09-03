@@ -5,3 +5,10 @@ C:\Users\Aluno\Desktop\2018-09-03.Wilker\DS.Projeto.Controller\DS.Projeto.View\o
 C:\Users\Aluno\Desktop\2018-09-03.Wilker\DS.Projeto.Controller\DS.Projeto.View\obj\x86\Debug\DS.Projeto.View.csproj.GenerateResource.Cache
 C:\Users\Aluno\Desktop\2018-09-03.Wilker\DS.Projeto.Controller\DS.Projeto.View\obj\x86\Debug\DS.Projeto.View.exe
 C:\Users\Aluno\Desktop\2018-09-03.Wilker\DS.Projeto.Controller\DS.Projeto.View\obj\x86\Debug\DS.Projeto.View.pdb
+C:\Users\Aluno\Desktop\SQLConnection.CSharp\DS.Projeto.View\bin\Debug\DS.Projeto.View.exe
+C:\Users\Aluno\Desktop\SQLConnection.CSharp\DS.Projeto.View\bin\Debug\DS.Projeto.View.pdb
+C:\Users\Aluno\Desktop\SQLConnection.CSharp\DS.Projeto.View\obj\x86\Debug\DS.Projeto.View.frmMain.resources
+C:\Users\Aluno\Desktop\SQLConnection.CSharp\DS.Projeto.View\obj\x86\Debug\DS.Projeto.View.Properties.Resources.resources
+C:\Users\Aluno\Desktop\SQLConnection.CSharp\DS.Projeto.View\obj\x86\Debug\DS.Projeto.View.csproj.GenerateResource.Cache
+C:\Users\Aluno\Desktop\SQLConnection.CSharp\DS.Projeto.View\obj\x86\Debug\DS.Projeto.View.exe
+C:\Users\Aluno\Desktop\SQLConnection.CSharp\DS.Projeto.View\obj\x86\Debug\DS.Projeto.View.pdb

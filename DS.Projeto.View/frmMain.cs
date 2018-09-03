@@ -9,11 +9,11 @@ using System.Windows.Forms;
 
 namespace DS.Projeto.View
 {
-    public partial class frmMain : Form
-    {
-        public frmMain()
-        {
-            InitializeComponent();
-        }
-    }
+	public partial class frmMain : Form
+	{
+		public frmMain()
+		{
+			InitializeComponent();
+		}
+	}
 }

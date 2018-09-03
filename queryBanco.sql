@@ -1,6 +1,7 @@
 use master;
 drop database banco;
-create database banco;
+go
+ create database banco;
 use banco;
 
 go
