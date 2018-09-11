@@ -1,8 +1,10 @@
 use master;
-drop database banco;
+go
+ drop database banco;
 go
  create database banco;
-use banco;
+go
+ use banco;
 
 go
  create table tbEstadocivil (
@@ -45,3 +47,4 @@ go
 	primary key (id_cliente),
 	foreign key (id_pessoa) references tbPessoa(id_pessoa)
 )
+
