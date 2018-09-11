@@ -1,0 +1,4 @@
+C:\Users\Aluno\Desktop\SQLConnection.CSharp\DS.Projeto.Controller\bin\Release\DS.Projeto.Controller.dll
+C:\Users\Aluno\Desktop\SQLConnection.CSharp\DS.Projeto.Controller\bin\Release\DS.Projeto.Controller.pdb
+C:\Users\Aluno\Desktop\SQLConnection.CSharp\DS.Projeto.Controller\obj\Release\DS.Projeto.Controller.dll
+C:\Users\Aluno\Desktop\SQLConnection.CSharp\DS.Projeto.Controller\obj\Release\DS.Projeto.Controller.pdb

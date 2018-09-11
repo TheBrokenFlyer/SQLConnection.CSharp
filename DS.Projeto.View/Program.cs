@@ -15,7 +15,7 @@ namespace DS.Projeto.View
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new frmConsulta());
+			Application.Run(new frmMain());
 		}
 	}
 }

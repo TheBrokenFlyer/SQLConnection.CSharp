@@ -1,0 +1,5 @@
+C:\Users\Aluno\Desktop\SQLConnection.CSharp\DS.Projeto.View\obj\x86\Release\DS.Projeto.View.csprojResolveAssemblyReference.cache
+C:\Users\Aluno\Desktop\SQLConnection.CSharp\DS.Projeto.View\obj\x86\Release\DS.Projeto.View.frmConsulta.resources
+C:\Users\Aluno\Desktop\SQLConnection.CSharp\DS.Projeto.View\obj\x86\Release\DS.Projeto.View.frmMain.resources
+C:\Users\Aluno\Desktop\SQLConnection.CSharp\DS.Projeto.View\obj\x86\Release\DS.Projeto.View.Properties.Resources.resources
+C:\Users\Aluno\Desktop\SQLConnection.CSharp\DS.Projeto.View\obj\x86\Release\DS.Projeto.View.csproj.GenerateResource.Cache

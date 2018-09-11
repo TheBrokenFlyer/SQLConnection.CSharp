@@ -90,6 +90,10 @@
       <Project>{B88E695B-8568-48DE-A7A5-D91DDEB3FB53}</Project>
       <Name>DS.Projeto.Controller</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DS.Projeto.Model\DS.Projeto.Model.csproj">
+      <Project>{7C0CA86D-59E2-47B5-9F24-6A68AC02AAFE}</Project>
+      <Name>DS.Projeto.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

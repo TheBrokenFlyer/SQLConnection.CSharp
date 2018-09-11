@@ -9,12 +9,12 @@ using System.Windows.Forms;
 
 namespace DS.Projeto.View {
     public partial class frmConsulta : Form {
-        public frmConsulta() {
+        public frmConsulta(object DataSource) {
             InitializeComponent();
+            this.dtg.DataSource = DataSource;
         }
 
         private void selecionar(object sender, DataGridViewCellEventArgs e) {
-            MessageBox.Show("Hello world!", "ETEC ZL");
         }
     }
 }
