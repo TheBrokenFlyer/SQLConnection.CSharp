@@ -47,4 +47,3 @@ go
 	primary key (id_cliente),
 	foreign key (id_pessoa) references tbPessoa(id_pessoa)
 )
-

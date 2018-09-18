@@ -5,30 +5,10 @@ using System.Text;
 
 namespace DS.Projeto.Model {
     public class Pessoa {
-        public int id {
-            get { return this.id; }
-            private set {
-                if(value < 1 && value != -1) { throw new ArgumentException("ID não é maior que 1 nem é -1."); }
-            }
-        }
-        public string nome {
-            get { return this.nome; }
-            private set {
-                if (value.Length > 64) { throw new ArgumentException("Nome muito longo."); }
-            }
-        }
-		public string endereco {
-            get { return this.endereco; }
-			private set {
-				if(value.Length > 128) { throw new ArgumentException("Endereço muito longo."); }
-			}
-		}
-		public string estadoCivil {
-            get { return this.estadoCivil; }
-			private set {
-				if(value.Length > 11) { throw new ArgumentException("Estado civil muito longo."); }
-			}
-		}
+        public int id = -1;
+        public string nome = null;
+        public string endereco = null;
+        public string estadoCivil = null;
 		public DateTime nasc { get; private set; }
 
         public string insertString {
@@ -37,6 +17,10 @@ namespace DS.Projeto.Model {
         }
 
 		public Pessoa(int id, string nome, string endereco, string estadoCivil, DateTime nasc) {
+            if (id < 1 && id != -1) { throw new ArgumentException("ID não é maior que 1 nem é -1."); }
+            if (nome.Length > 64) { throw new ArgumentException("Nome muito longo."); }
+            if (endereco.Length > 128) { throw new ArgumentException("Endereço muito longo."); }
+            if (estadoCivil.Length > 11) { throw new ArgumentException("Estado civil muito longo."); }
             this.id = id;
             this.nome = nome;
             this.endereco = endereco;

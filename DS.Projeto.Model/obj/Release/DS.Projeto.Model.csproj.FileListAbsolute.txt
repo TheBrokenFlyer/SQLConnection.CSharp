@@ -1,0 +1,4 @@
+C:\Users\Aluno\Desktop\SQLConnection.CSharp\DS.Projeto.Model\bin\Release\DS.Projeto.Model.dll
+C:\Users\Aluno\Desktop\SQLConnection.CSharp\DS.Projeto.Model\bin\Release\DS.Projeto.Model.pdb
+C:\Users\Aluno\Desktop\SQLConnection.CSharp\DS.Projeto.Model\obj\Release\DS.Projeto.Model.dll
+C:\Users\Aluno\Desktop\SQLConnection.CSharp\DS.Projeto.Model\obj\Release\DS.Projeto.Model.pdb

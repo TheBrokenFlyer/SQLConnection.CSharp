@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
+using System.Data;
 
 namespace DS.Projeto.Controller {
 	public class Connector {
 
 		private static SqlConnection _conn = null;
 		private static string _connString =
-			  "Data Source=127.0.0.1;"
+			  "Data Source=localhost;"
 			+ "Initial Catalog=banco;"
 			+ "User id=sa;"
 			+ "Password=info211;";
@@ -35,5 +36,15 @@ namespace DS.Projeto.Controller {
 			Connector.close();
 			return rowsAffected;
 		}
+
+        public static DataSet executeQuery(string command) {
+            Connector.connect();
+            SqlCommand statement = new SqlCommand(command, Connector._conn);
+            SqlDataAdapter queryResults = new SqlDataAdapter(statement);
+            DataSet resultSet = new DataSet();
+            queryResults.Fill(resultSet);
+            Connector.close();
+            return resultSet;
+        }
 	}
 }

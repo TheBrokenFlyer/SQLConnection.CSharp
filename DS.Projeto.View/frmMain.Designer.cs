@@ -91,7 +91,7 @@
             this.txtNome.Location = new System.Drawing.Point(193, 65);
             this.txtNome.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(196, 26);
+            this.txtNome.Size = new System.Drawing.Size(396, 26);
             this.txtNome.TabIndex = 5;
             // 
             // txtEndereco
@@ -100,7 +100,7 @@
             this.txtEndereco.Location = new System.Drawing.Point(193, 103);
             this.txtEndereco.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.txtEndereco.Name = "txtEndereco";
-            this.txtEndereco.Size = new System.Drawing.Size(196, 26);
+            this.txtEndereco.Size = new System.Drawing.Size(396, 26);
             this.txtEndereco.TabIndex = 6;
             // 
             // dtpNasc
@@ -116,6 +116,10 @@
             // 
             this.cmbEstadoCivil.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.cmbEstadoCivil.FormattingEnabled = true;
+            this.cmbEstadoCivil.Items.AddRange(new object[] {
+            "solteiro(a)",
+            "casado(a)",
+            "outro"});
             this.cmbEstadoCivil.Location = new System.Drawing.Point(193, 141);
             this.cmbEstadoCivil.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.cmbEstadoCivil.Name = "cmbEstadoCivil";

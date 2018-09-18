@@ -3,3 +3,11 @@ C:\Users\Aluno\Desktop\SQLConnection.CSharp\DS.Projeto.View\obj\x86\Release\DS.P
 C:\Users\Aluno\Desktop\SQLConnection.CSharp\DS.Projeto.View\obj\x86\Release\DS.Projeto.View.frmMain.resources
 C:\Users\Aluno\Desktop\SQLConnection.CSharp\DS.Projeto.View\obj\x86\Release\DS.Projeto.View.Properties.Resources.resources
 C:\Users\Aluno\Desktop\SQLConnection.CSharp\DS.Projeto.View\obj\x86\Release\DS.Projeto.View.csproj.GenerateResource.Cache
+C:\Users\Aluno\Desktop\SQLConnection.CSharp\DS.Projeto.View\bin\Release\DS.Projeto.View.exe
+C:\Users\Aluno\Desktop\SQLConnection.CSharp\DS.Projeto.View\bin\Release\DS.Projeto.View.pdb
+C:\Users\Aluno\Desktop\SQLConnection.CSharp\DS.Projeto.View\bin\Release\DS.Projeto.Controller.dll
+C:\Users\Aluno\Desktop\SQLConnection.CSharp\DS.Projeto.View\bin\Release\DS.Projeto.Model.dll
+C:\Users\Aluno\Desktop\SQLConnection.CSharp\DS.Projeto.View\bin\Release\DS.Projeto.Controller.pdb
+C:\Users\Aluno\Desktop\SQLConnection.CSharp\DS.Projeto.View\bin\Release\DS.Projeto.Model.pdb
+C:\Users\Aluno\Desktop\SQLConnection.CSharp\DS.Projeto.View\obj\x86\Release\DS.Projeto.View.exe
+C:\Users\Aluno\Desktop\SQLConnection.CSharp\DS.Projeto.View\obj\x86\Release\DS.Projeto.View.pdb
