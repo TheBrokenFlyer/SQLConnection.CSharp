@@ -32,16 +32,18 @@ namespace DS.Projeto.View {
 			bool estNull = cmbEstadoCivil.SelectedValue == "";
 			bool nscNull = dtpNasc.Value == null;
 			try {
-				 frmMain.windowConsulta = new frmConsulta(Connector.executeQuery(string.Format(
-					"SELECT * FROM tbPessoa WHERE {0} {1} {2} {3}",
-					nomeNull ? "" : "(pessoa_nome LIKE '%" + txtNome.Text + "%')",
-					endNull ? "" : (nomeNull ? "" : " AND ") + "(pessoa_endereco LIKE '%" + txtEndereco.Text + "%')",
-					estNull ? "" : (nomeNull && endNull ? "" : " AND ") + "(pessoa_estadocivil = '" + (string)cmbEstadoCivil.SelectedValue + "')",
-					nscNull ? "" : (nomeNull && endNull && estNull ? "" : " AND ") + "(pessoa_nasc = '" + dtpNasc.Value.ToString("yyyy-MM-dd") + "')"
-					)).Tables[0]);
-				 frmMain.windowConsulta.Show();
+				frmMain.windowConsulta = new frmConsulta(Connector.executeQuery(string.Format(
+				   "SELECT * FROM tbPessoa WHERE {0} {1} {2} {3}",
+				   nomeNull ? "" : "(pessoa_nome LIKE '%" + txtNome.Text + "%')",
+				   endNull ? "" : (nomeNull ? "" : " AND ") + "(pessoa_endereco LIKE '%" + txtEndereco.Text + "%')",
+				   estNull ? "" : (nomeNull && endNull ? "" : " AND ") + "(pessoa_estadocivil = '" + (string)cmbEstadoCivil.SelectedValue + "')",
+				   nscNull ? "" : (nomeNull && endNull && estNull ? "" : " AND ") + "(pessoa_nasc = '" + dtpNasc.Value.ToString("yyyy-MM-dd") + "')"
+				   )).Tables[0]);
+				frmMain.windowConsulta.Show();
 			} catch (Exception exp) {
 				MessageBox.Show("Houve um erro.\n\n" + exp.Message + "\n" + exp.StackTrace, "Erro!");
+			} finally {
+				Connector.close();
 			}
 		}
 	}

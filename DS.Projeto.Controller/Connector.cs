@@ -22,7 +22,7 @@ namespace DS.Projeto.Controller {
 			Connector._conn.Open();
 		}
 
-		private static void close() {
+		public static void close() {
 			if (Connector._conn != null) {
 				Connector._conn.Close();
 				Connector._conn = null;
@@ -38,13 +38,13 @@ namespace DS.Projeto.Controller {
 		}
 
 		public static DataSet executeQuery(string command) {
-		Connector.connect();
-		SqlCommand statement = new SqlCommand(command, Connector._conn);
-		SqlDataAdapter queryResults = new SqlDataAdapter(statement);
-		DataSet resultSet = new DataSet();
-		queryResults.Fill(resultSet);
-		Connector.close();
-		return resultSet;
+			Connector.connect();
+			SqlCommand statement = new SqlCommand(command, Connector._conn);
+			SqlDataAdapter queryResults = new SqlDataAdapter(statement);
+			DataSet resultSet = new DataSet();
+			queryResults.Fill(resultSet);
+			Connector.close();
+			return resultSet;
 		}
 	}
 }
