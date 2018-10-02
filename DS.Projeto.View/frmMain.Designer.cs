@@ -28,185 +28,206 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.lblNome = new System.Windows.Forms.Label();
-			this.lblEndereco = new System.Windows.Forms.Label();
-			this.lblEstadoCivil = new System.Windows.Forms.Label();
-			this.label5 = new System.Windows.Forms.Label();
-			this.txtNome = new System.Windows.Forms.TextBox();
-			this.txtEndereco = new System.Windows.Forms.TextBox();
-			this.dtpNasc = new System.Windows.Forms.DateTimePicker();
-			this.cmbEstadoCivil = new System.Windows.Forms.ComboBox();
-			this.label1 = new System.Windows.Forms.Label();
-			this.btnCadastrar = new System.Windows.Forms.Button();
-			this.btnPesquisar = new System.Windows.Forms.Button();
-			this.txtNomePesquisa = new System.Windows.Forms.TextBox();
-			this.SuspendLayout();
-			// 
-			// lblNome
-			// 
-			this.lblNome.AutoSize = true;
-			this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-			this.lblNome.Location = new System.Drawing.Point(23, 68);
-			this.lblNome.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
-			this.lblNome.Name = "lblNome";
-			this.lblNome.Size = new System.Drawing.Size(55, 20);
-			this.lblNome.TabIndex = 1;
-			this.lblNome.Text = "Nome:";
-			// 
-			// lblEndereco
-			// 
-			this.lblEndereco.AutoSize = true;
-			this.lblEndereco.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-			this.lblEndereco.Location = new System.Drawing.Point(23, 106);
-			this.lblEndereco.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
-			this.lblEndereco.Name = "lblEndereco";
-			this.lblEndereco.Size = new System.Drawing.Size(82, 20);
-			this.lblEndereco.TabIndex = 2;
-			this.lblEndereco.Text = "Endereço:";
-			// 
-			// lblEstadoCivil
-			// 
-			this.lblEstadoCivil.AutoSize = true;
-			this.lblEstadoCivil.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-			this.lblEstadoCivil.Location = new System.Drawing.Point(23, 144);
-			this.lblEstadoCivil.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
-			this.lblEstadoCivil.Name = "lblEstadoCivil";
-			this.lblEstadoCivil.Size = new System.Drawing.Size(92, 20);
-			this.lblEstadoCivil.TabIndex = 3;
-			this.lblEstadoCivil.Text = "Estado civil:";
-			// 
-			// label5
-			// 
-			this.label5.AutoSize = true;
-			this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-			this.label5.Location = new System.Drawing.Point(23, 186);
-			this.label5.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(156, 20);
-			this.label5.TabIndex = 4;
-			this.label5.Text = "Data de nascimento:";
-			// 
-			// txtNome
-			// 
-			this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-			this.txtNome.Location = new System.Drawing.Point(193, 65);
-			this.txtNome.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-			this.txtNome.Name = "txtNome";
-			this.txtNome.Size = new System.Drawing.Size(396, 26);
-			this.txtNome.TabIndex = 5;
-			// 
-			// txtEndereco
-			// 
-			this.txtEndereco.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-			this.txtEndereco.Location = new System.Drawing.Point(193, 103);
-			this.txtEndereco.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-			this.txtEndereco.Name = "txtEndereco";
-			this.txtEndereco.Size = new System.Drawing.Size(396, 26);
-			this.txtEndereco.TabIndex = 6;
-			// 
-			// dtpNasc
-			// 
-			this.dtpNasc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-			this.dtpNasc.Location = new System.Drawing.Point(193, 181);
-			this.dtpNasc.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-			this.dtpNasc.Name = "dtpNasc";
-			this.dtpNasc.Size = new System.Drawing.Size(396, 26);
-			this.dtpNasc.TabIndex = 8;
-			// 
-			// cmbEstadoCivil
-			// 
-			this.cmbEstadoCivil.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-			this.cmbEstadoCivil.FormattingEnabled = true;
-			this.cmbEstadoCivil.Items.AddRange(new object[] {
-            "solteiro(a)",
-            "casado(a)",
-            "outro"});
-			this.cmbEstadoCivil.Location = new System.Drawing.Point(193, 141);
-			this.cmbEstadoCivil.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-			this.cmbEstadoCivil.Name = "cmbEstadoCivil";
-			this.cmbEstadoCivil.Size = new System.Drawing.Size(239, 28);
-			this.cmbEstadoCivil.TabIndex = 9;
-			// 
-			// label1
-			// 
-			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(224, 9);
-			this.label1.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(196, 24);
-			this.label1.TabIndex = 10;
-			this.label1.Text = "Cadastro de Pessoa";
-			// 
-			// btnCadastrar
-			// 
-			this.btnCadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-			this.btnCadastrar.Location = new System.Drawing.Point(251, 225);
-			this.btnCadastrar.Name = "btnCadastrar";
-			this.btnCadastrar.Size = new System.Drawing.Size(109, 29);
-			this.btnCadastrar.TabIndex = 11;
-			this.btnCadastrar.Text = "Cadastrar";
-			this.btnCadastrar.UseVisualStyleBackColor = true;
-			this.btnCadastrar.Click += new System.EventHandler(this.cadastrar);
-			// 
-			// btnPesquisar
-			// 
-			this.btnPesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-			this.btnPesquisar.Location = new System.Drawing.Point(480, 293);
-			this.btnPesquisar.Name = "btnPesquisar";
-			this.btnPesquisar.Size = new System.Drawing.Size(109, 29);
-			this.btnPesquisar.TabIndex = 12;
-			this.btnPesquisar.Text = "Pesquisar";
-			this.btnPesquisar.UseVisualStyleBackColor = true;
-			this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
-			// 
-			// txtNomePesquisa
-			// 
-			this.txtNomePesquisa.Location = new System.Drawing.Point(27, 293);
-			this.txtNomePesquisa.Name = "txtNomePesquisa";
-			this.txtNomePesquisa.Size = new System.Drawing.Size(447, 29);
-			this.txtNomePesquisa.TabIndex = 14;
-			// 
-			// frmMain
-			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(611, 334);
-			this.Controls.Add(this.txtNomePesquisa);
-			this.Controls.Add(this.btnPesquisar);
-			this.Controls.Add(this.btnCadastrar);
-			this.Controls.Add(this.label1);
-			this.Controls.Add(this.cmbEstadoCivil);
-			this.Controls.Add(this.dtpNasc);
-			this.Controls.Add(this.txtEndereco);
-			this.Controls.Add(this.txtNome);
-			this.Controls.Add(this.label5);
-			this.Controls.Add(this.lblEstadoCivil);
-			this.Controls.Add(this.lblEndereco);
-			this.Controls.Add(this.lblNome);
-			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-			this.Name = "frmMain";
-			this.Text = "Banco";
-			this.ResumeLayout(false);
-			this.PerformLayout();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.lblNome = new System.Windows.Forms.Label();
+            this.lblDesc = new System.Windows.Forms.Label();
+            this.lblQtd = new System.Windows.Forms.Label();
+            this.lblValor = new System.Windows.Forms.Label();
+            this.lblDataLote = new System.Windows.Forms.Label();
+            this.txtNome = new System.Windows.Forms.TextBox();
+            this.txtDesc = new System.Windows.Forms.TextBox();
+            this.nmbQtd = new System.Windows.Forms.NumericUpDown();
+            this.nmbValor = new System.Windows.Forms.NumericUpDown();
+            this.lblVal = new System.Windows.Forms.Label();
+            this.btnCadastrar = new System.Windows.Forms.Button();
+            this.dtpValidade = new System.Windows.Forms.DateTimePicker();
+            this.dtpLote = new System.Windows.Forms.DateTimePicker();
+            ((System.ComponentModel.ISupportInitialize)(this.nmbQtd)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nmbValor)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Location = new System.Drawing.Point(12, 9);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(322, 24);
+            this.lblTitle.TabIndex = 0;
+            this.lblTitle.Text = "Adicionar ou pesquisar produto...";
+            // 
+            // lblNome
+            // 
+            this.lblNome.AutoSize = true;
+            this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNome.Location = new System.Drawing.Point(12, 60);
+            this.lblNome.Name = "lblNome";
+            this.lblNome.Size = new System.Drawing.Size(38, 13);
+            this.lblNome.TabIndex = 1;
+            this.lblNome.Text = "Nome:";
+            // 
+            // lblDesc
+            // 
+            this.lblDesc.AutoSize = true;
+            this.lblDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDesc.Location = new System.Drawing.Point(12, 86);
+            this.lblDesc.Name = "lblDesc";
+            this.lblDesc.Size = new System.Drawing.Size(58, 13);
+            this.lblDesc.TabIndex = 2;
+            this.lblDesc.Text = "Descrição:";
+            // 
+            // lblQtd
+            // 
+            this.lblQtd.AutoSize = true;
+            this.lblQtd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQtd.Location = new System.Drawing.Point(12, 161);
+            this.lblQtd.Name = "lblQtd";
+            this.lblQtd.Size = new System.Drawing.Size(65, 13);
+            this.lblQtd.TabIndex = 3;
+            this.lblQtd.Text = "Quantidade:";
+            // 
+            // lblValor
+            // 
+            this.lblValor.AutoSize = true;
+            this.lblValor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValor.Location = new System.Drawing.Point(12, 187);
+            this.lblValor.Name = "lblValor";
+            this.lblValor.Size = new System.Drawing.Size(85, 13);
+            this.lblValor.TabIndex = 4;
+            this.lblValor.Text = "Valor (Moeda-$):";
+            // 
+            // lblDataLote
+            // 
+            this.lblDataLote.AutoSize = true;
+            this.lblDataLote.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDataLote.Location = new System.Drawing.Point(13, 211);
+            this.lblDataLote.Name = "lblDataLote";
+            this.lblDataLote.Size = new System.Drawing.Size(57, 13);
+            this.lblDataLote.TabIndex = 5;
+            this.lblDataLote.Text = "Data Lote:";
+            // 
+            // txtNome
+            // 
+            this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNome.Location = new System.Drawing.Point(103, 57);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(227, 20);
+            this.txtNome.TabIndex = 6;
+            // 
+            // txtDesc
+            // 
+            this.txtDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDesc.Location = new System.Drawing.Point(103, 83);
+            this.txtDesc.Multiline = true;
+            this.txtDesc.Name = "txtDesc";
+            this.txtDesc.Size = new System.Drawing.Size(227, 70);
+            this.txtDesc.TabIndex = 7;
+            // 
+            // nmbQtd
+            // 
+            this.nmbQtd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nmbQtd.Location = new System.Drawing.Point(103, 159);
+            this.nmbQtd.Name = "nmbQtd";
+            this.nmbQtd.Size = new System.Drawing.Size(120, 20);
+            this.nmbQtd.TabIndex = 8;
+            this.nmbQtd.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // nmbValor
+            // 
+            this.nmbValor.DecimalPlaces = 2;
+            this.nmbValor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nmbValor.Location = new System.Drawing.Point(103, 185);
+            this.nmbValor.Name = "nmbValor";
+            this.nmbValor.Size = new System.Drawing.Size(120, 20);
+            this.nmbValor.TabIndex = 9;
+            this.nmbValor.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // lblVal
+            // 
+            this.lblVal.AutoSize = true;
+            this.lblVal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVal.Location = new System.Drawing.Point(13, 237);
+            this.lblVal.Name = "lblVal";
+            this.lblVal.Size = new System.Drawing.Size(77, 13);
+            this.lblVal.TabIndex = 12;
+            this.lblVal.Text = "Data Validade:";
+            // 
+            // btnCadastrar
+            // 
+            this.btnCadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadastrar.Location = new System.Drawing.Point(103, 263);
+            this.btnCadastrar.Name = "btnCadastrar";
+            this.btnCadastrar.Size = new System.Drawing.Size(75, 23);
+            this.btnCadastrar.TabIndex = 13;
+            this.btnCadastrar.Text = "Cadastrar";
+            this.btnCadastrar.UseVisualStyleBackColor = true;
+            this.btnCadastrar.Click += new System.EventHandler(this.cadastrar);
+            // 
+            // dtpValidade
+            // 
+            this.dtpValidade.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpValidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpValidade.Location = new System.Drawing.Point(103, 237);
+            this.dtpValidade.Name = "dtpValidade";
+            this.dtpValidade.Size = new System.Drawing.Size(227, 20);
+            this.dtpValidade.TabIndex = 14;
+            // 
+            // dtpLote
+            // 
+            this.dtpLote.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpLote.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpLote.Location = new System.Drawing.Point(103, 211);
+            this.dtpLote.Name = "dtpLote";
+            this.dtpLote.Size = new System.Drawing.Size(227, 20);
+            this.dtpLote.TabIndex = 15;
+            // 
+            // frmMain
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(393, 307);
+            this.Controls.Add(this.dtpLote);
+            this.Controls.Add(this.dtpValidade);
+            this.Controls.Add(this.btnCadastrar);
+            this.Controls.Add(this.lblVal);
+            this.Controls.Add(this.nmbValor);
+            this.Controls.Add(this.nmbQtd);
+            this.Controls.Add(this.txtDesc);
+            this.Controls.Add(this.txtNome);
+            this.Controls.Add(this.lblDataLote);
+            this.Controls.Add(this.lblValor);
+            this.Controls.Add(this.lblQtd);
+            this.Controls.Add(this.lblDesc);
+            this.Controls.Add(this.lblNome);
+            this.Controls.Add(this.lblTitle);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.Name = "frmMain";
+            this.Text = "Banco";
+            ((System.ComponentModel.ISupportInitialize)(this.nmbQtd)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nmbValor)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 
 		#endregion
 
-		private System.Windows.Forms.Label lblNome;
-		private System.Windows.Forms.Label lblEndereco;
-		private System.Windows.Forms.Label lblEstadoCivil;
-		private System.Windows.Forms.Label label5;
-		private System.Windows.Forms.TextBox txtNome;
-		private System.Windows.Forms.TextBox txtEndereco;
-		private System.Windows.Forms.DateTimePicker dtpNasc;
-		private System.Windows.Forms.ComboBox cmbEstadoCivil;
-		private System.Windows.Forms.Label label1;
-		private System.Windows.Forms.Button btnCadastrar;
-		private System.Windows.Forms.Button btnPesquisar;
-		private System.Windows.Forms.TextBox txtNomePesquisa;
+        private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.Label lblNome;
+        private System.Windows.Forms.Label lblDesc;
+        private System.Windows.Forms.Label lblQtd;
+        private System.Windows.Forms.Label lblValor;
+        private System.Windows.Forms.Label lblDataLote;
+        private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.TextBox txtDesc;
+        private System.Windows.Forms.NumericUpDown nmbQtd;
+        private System.Windows.Forms.NumericUpDown nmbValor;
+        private System.Windows.Forms.Label lblVal;
+        private System.Windows.Forms.Button btnCadastrar;
+        private System.Windows.Forms.DateTimePicker dtpValidade;
+        private System.Windows.Forms.DateTimePicker dtpLote;
 
-	}
+
+    }
 }
 
