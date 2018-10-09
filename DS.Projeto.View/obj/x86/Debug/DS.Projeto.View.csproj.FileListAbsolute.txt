@@ -18,3 +18,4 @@ C:\Users\Aluno\Desktop\SQLConnection.CSharp\DS.Projeto.View\bin\Debug\DS.Projeto
 C:\Users\Aluno\Desktop\SQLConnection.CSharp\DS.Projeto.View\bin\Debug\DS.Projeto.Controller.pdb
 C:\Users\Aluno\Desktop\SQLConnection.CSharp\DS.Projeto.View\bin\Debug\DS.Projeto.Model.dll
 C:\Users\Aluno\Desktop\SQLConnection.CSharp\DS.Projeto.View\bin\Debug\DS.Projeto.Model.pdb
+C:\Users\Aluno\Desktop\SQLConnection.CSharp\DS.Projeto.View\obj\x86\Debug\DS.Projeto.View.frmPesquisa.resources
