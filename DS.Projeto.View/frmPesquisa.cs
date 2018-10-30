@@ -10,14 +10,21 @@ using DS.Projeto.Controller;
 
 namespace DS.Projeto.View {
 	public partial class frmPesquisa : Form {
-		public frmPesquisa() {
+		public frmPesquisa(frmMain parent) {
 			InitializeComponent();
+            this.parent = parent;
 		}
 
+        private frmMain parent;
+
 		/// <summary>
-		/// SQL Injection was never so easy, i think.
+		/// SQL Injection
 		/// </summary>
 		private void pesquisar(object sender, EventArgs e) {
+            if (txtPesquisa.Text.ToUpper().Equals(">GUARDADOS")) {
+                frmMain.windowConsulta = new frmConsulta(this.parent.transaction);
+                return;
+            }
 			frmMain.windowConsulta = new frmConsulta(
 				Connector.executeQuery("SELECT FROM tbProduto WHERE (produtoNome = '%" +txtPesquisa.Text +"%')")
 				);

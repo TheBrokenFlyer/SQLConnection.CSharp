@@ -16,7 +16,8 @@ namespace DS.Projeto.View {
 		}
 
 		public static frmPesquisa windowPesquisa = null;
-		public static frmConsulta windowConsulta = null;
+        public static frmConsulta windowConsulta = null;
+        public List<Produto> transaction = new List<Produto>(0);
 
 		public Produto prdt {
 			private get {
@@ -26,17 +27,28 @@ namespace DS.Projeto.View {
 					(int)nmbQtd.Value,	//quantidade
 					nmbValor.Value,		//valor
 					dtpLote.Value,		//data lote
-					dtpLote.Value);		//data validade
+					dtpValidade.Value);		//data validade
 			}
 			set { throw new UnauthorizedAccessException("Não pode ser definido."); }
 		}
 
-		private void cadastrar(object sender, EventArgs e) {
+        private void guardar(object sender, EventArgs e) {
+            this.transaction.Add(this.prdt);
+            this.limpar(sender, e);
+        }
+
+        private void enviar(object sender, EventArgs e) {
+            string insert = "";
 			try {
+                try { insert += this.prdt.insertString; } catch { }
 				//executa inserção com os dados do objeto
-				Connector.execute(this.prdt.insertString);
+                foreach (Produto p in this.transaction) {
+                    insert += p.insertString;
+                }
+                Connector.execute(insert);
+                this.transaction.Clear();
 			} catch (Exception exp) {
-				MessageBox.Show("Houve um erro.\n\n" + exp.Message + "\n" + exp.StackTrace, "Erro!");
+				MessageBox.Show("Houve um erro.\n\n" + exp.Message + "\n" + exp.StackTrace +"\n" +insert, "Erro!");
 			}
 		}
 
@@ -47,7 +59,7 @@ namespace DS.Projeto.View {
 		}
 
 		private void pesquisar(object sender, EventArgs e) {
-			frmMain.windowPesquisa = new frmPesquisa();
+			frmMain.windowPesquisa = new frmPesquisa(this);
 			frmMain.windowPesquisa.Show();
 		}
 	}

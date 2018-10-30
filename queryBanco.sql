@@ -1,18 +1,17 @@
 use master;
 go
- drop database banco;
+drop database banco;
+create database banco;
 go
- create database banco;
+use banco;
 go
- use banco;
 
-go
- create table tbProduto (
+create table tbProduto (
 	idProduto int primary key identity(0,1) not null,
 	produtoNome varchar(64) not null unique,
 	produtoDesc varchar(512),
-	produtoQtd int check(produtoQtd >-1) not null,
-	produtoValor decimal check(produtoValor >0) not null,
+	produtoQtd int check(produtoQtd >= 0) not null,
+	produtoValor decimal check(produtoValor >= 0) not null,
 	produtoDataLote date not null default GETDATE(),
 	produtoDataValidade date not null check(produtoDataValidade >GETDATE())
 )
